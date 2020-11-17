@@ -1,0 +1,16 @@
+appdirs==1.4.4
+astropy==4.1
+click==7.1.2
+distlib==0.3.1
+filelock==3.0.12
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+numpy==1.19.3
+pyculib @ file:///C:/Users/qinmi/Downloads/pyculib-1.0.2-py2.py3-none-any.whl
+pysolar==0.9
+six==1.15.0
+virtualenv==20.1.0
+Werkzeug==1.0.1
+pytz==2020.4

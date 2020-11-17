@@ -1,0 +1,29 @@
+#I work with mac all the time, happened to have a powerful windows machine, wanna explore out. 
+#Windows set up:
+
+##install virtualenv
+add path variable to system path C:\Users\qinmi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts
+
+Installing collected packages: filelock, appdirs, six, distlib, virtualenv
+  WARNING: The script virtualenv.exe is installed in 'C:\Users\qinmi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed appdirs-1.4.4 distlib-0.3.1 filelock-3.0.12 six-1.15.0 virtualenv-20.1.0
+WARNING: You are using pip version 20.2.3; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\qinmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip' command.
+
+## activate on windows 
+C:\Users\qinmi\Documents\2020\flask_api_example>virtualenv --system-site-packages -p python3 ./venv
+created virtual environment CPython3.8.6.final.0-64 in 1105ms
+  creator Venv(dest=C:\Users\qinmi\Documents\2020\flask_api_example\venv, clear=False, global=True, describe=CPython3Windows)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\qinmi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.4, setuptools==50.3.2, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+C:\Users\qinmi\Documents\2020\flask_api_example>
+C:\Users\qinmi\Documents\2020\flask_api_example>
+C:\Users\qinmi\Documents\2020\flask_api_example>.\venv\Scripts\activate
+
+pip uninstall numpy
+pip install numpy==1.19.3
+
+https://stackoverflow.com/questions/64654805/how-do-you-fix-runtimeerror-package-fails-to-pass-a-sanity-check-for-numpy-an

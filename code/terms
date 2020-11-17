@@ -1,0 +1,23 @@
+narrow view of who we are
+
+never content with the status quo.
+
+Online transaction processing (OLTP) captures, stores, and processes data from transactions in real time. Online analytical processing (OLAP) uses complex queries to analyze aggregated historical data from OLTP systems.
+
+PriorityQueue is not thread safe. Use PriorityBlockingQueue in concurrent environment.
+It provides O(log(n)) time for add and poll methods.
+
+Employee class'w own compareTo
+@Override
+public int compareTo(Employee emp) {
+    return this.getId().compareTo(emp.getId());
+}
+
+//Comparator for name field
+Comparator<Employee> nameSorter = Comparator.comparing(Employee::getName);
+ 
+PriorityQueue<Employee> priorityQueue = new PriorityQueue<>( nameSorter );
+
+
+
+

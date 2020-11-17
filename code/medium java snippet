@@ -1,0 +1,259 @@
+1. PriorityQueue<Integer> pq = Arrays.stream(arr).boxed()
+    .collect(Collectors.toCollection(PriorityQueue::new));
+System.out.println(pq);  
+
+arr:[40,10,20,30]
+stdout
+[10, 30, 20, 40]
+
+[10, 30, 20, 40]
+10:1
+20:2
+30:3
+40:4
+
+
+2. 
+  public boolean checkIfExist(int[] arr) {
+    Set<Integer> set = new HashSet<>();
+    for (Integer num : arr) {
+      if (set.contains(num * 2)
+3. 
+int i = 0;
+for (; i < A.length - 1; i++) {
+    if (A[i] <= A[i + 1]) {
+        continue;
+    } else {
+        break;
+    }
+}
+
+4. 
+Integer candidate = null;
+Integer could be null
+
+5. 
+int[] arr = Arrays.copyOf(digits, len + 1);
+6. put replace block under else
+      if (nums[i] > nums[i - 1]) {
+        currCount++;
+      }
+      else {
+        maxLength = Math.max(maxLength, currCount);
+        currCount = 1;
+      }
+
+7.
+      int curr = arr[i];
+      int prev = i == 0 ? 0 : arr[i - 1];
+8.
+Ok, if put {} direclty in Array.stream
+then x
+            int[] tmp={cost[i],cost[i+1],cost[i+2]};
+            int tmpMin=Collections.min(Arrays.stream(tmp).boxed().collect(Collectors.toList()));
+            min=Math.min(min, tmpMin);
+9. 
+get decimal value from bit number
+        // 0, 01, 011, makes sense
+        for (int i = 0; i < A.length; i++) {
+            currSum = 2 * currSum + A[i];
+10. 
+Confirmation number
+00916101            
+
+11. 
+// provide value for new key which is absent 
+// using computeIfAbsent method 
+map.computeIfAbsent("key5", 
+                    k -> 2000 + 33000); 
+map.computeIfAbsent("key6", 
+                    k -> 2000 * 34); 
+
+// print new mapping 
+System.out.println("New HashMap:\n "
+                   + map);
+
+New HashMap:
+ {key1=10000, key2=55000, key5=35000, key6=68000, key3=44300, key4=53200}
+
+12. 
+int val = customfunction.f(i, j);
+
+13. 
+boolean[] dp = new boolean[N + 1];
+dp.forEach(b -> System.out.println(Boolean.toString(b)));
+
+Image result for java initiate boolean array default is false
+By default boolean variables are initialized with false in Java programming language.
+
+      for(int i = 0; i < boolArray.length; i++) {
+         System.out.println(boolArray[i]);
+      }
+      Arrays.fill(boolArray, Boolean.FALSE);
+      // all the values will be false
+      for(int i = 0; i < boolArray.length; i++) {
+         System.out.println(boolArray[i]);
+      }
+
+null
+null
+null
+null
+null
+false
+false
+false
+false
+false
+
+14.
+Senior 4-5 questions
+intermediate 2-3 questions
+15.
+The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) 
+
+16.
+Count Odd Numbers in an Interval Range
+return (high + 1) / 2 - low / 2;
+odd numbers between 3 and 7 are [3,5,7].
+
+17. 
+java Area of triangle
+Area of triangle =  (Ax(By -Cy) + Bx(Cy -Ay) + Cx(Ay - By))/2
+    private double getArea(int[] P, int[] Q, int[] R) {
+        return 0.5 * Math.abs(P[0] * Q[1] + Q[0] * R[1] + R[0] * P[1]
+                             -P[1] * Q[0] - Q[1] * R[0] - R[1] * P[0]);
+    }
+
+18. 
+    
+    public int getMin(int[] arr) {
+        int minVal = Integer.MAX_VALUE;
+        
+        for (int i=0;i<arr.length;i++) {
+            if (arr[i] < minVal) {
+                minVal = arr[i];
+            }
+        }
+        return minVal;
+    }
+
+19. 
+int a = (int)Math.sqrt(area);
+
+20. 
+    private boolean isLeapYear(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                return year % 400 == 0;
+            }
+            else {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+
+    int year = Integer.parseInt(date.split("-")[0]);
+    int month = Integer.parseInt(date.split("-")[1]);
+    int day = Integer.parseInt(date.split("-")[2]);
+
+21.
+
+    
+    private long permutation(int n) {
+        long count = 1L;
+        while (n > 0) {
+            count = count * n-- % MOD;
+        }
+        return count;
+    }
+
+
+ 22. 
+   private int reverse(int n) {
+    int newNum = 0;
+    while (n > 0) {
+      newNum = newNum * 10 + n % 10;
+      n /= 10;
+    }
+    return newNum;
+  }
+
+    public int reverse(int x) {
+        int rev = 0;
+        // x!=0; applies to negative too
+        while (x != 0) {
+            int pop = x % 10;
+            x /= 10;
+            if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) return 0;
+            if (rev < Integer.MIN_VALUE/10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)) return 0;
+            rev = rev * 10 + pop;
+        }
+        return rev;
+    }
+
+23. 
+System.out.println(Integer.toString(n, 3));
+Your input
+27
+stdout
+1000
+
+24. 
+P(n,r)=P(10,10)
+=10!(10−10)!
+=3.6288E+6
+= 3628800
+
+25. 
+
+i *= x
+x 的1次方，2次方，3次方
+        
+26. 
+every /5 trailing zero ++
+27. 
+3 points not on same line
+return (p[0][0] - p[1][0]) * (p[0][1] - p[2][1]) != (p[0][0] - p[2][0]) * (p[0][1] - p[1][1]);
+28.
+(char)('A'+n%26)
+
+29. 
+1,0,1 =5
+    public int getDecimalValue(ListNode head) {
+        int num=head.val;
+        while(head.next!=null){
+            num=num*2+head.next.val;
+            head=head.next;
+        }
+        return num;
+    }
+
+30. 
+
+        Set<Integer> match = new HashSet<>();
+        for (int num : nums2) {
+          if (set.contains(num)) {
+            match.add(num);
+          }
+        }
+        int[] ans = new int[match.size()];
+        Iterator<Integer> iter = match.iterator();
+        for (int i = 0; i < ans.length; i++) {
+          ans[i] = iter.next();
+        }
+
+31. 
+set1.retainAll(set2);        
+
+32.
+You call a pre-defined API int guess(int num), which returns 3 possible results:
+33. 
+        Set<Integer> set = new HashSet<>(map.values());
+        return map.size() == set.size();
+34.
+List<String> list = new ArrayList<>();
+return list.toArray(new String[list.size()]);
+35.
